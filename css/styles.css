@@ -705,15 +705,16 @@ header {
 }
 .check-text {
   display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
   gap: 3px;
 }
-.check-text-link {
-  line-height: 1.33;
-}
+/*.check-text-link {
+  text-decoration-line: underline;
+}*/
 .check-text::before {
   content: "";
   width: 16px;
@@ -725,7 +726,7 @@ header {
 .check-icon {
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 3px;
   transform: translateY(-50%);
   fill: var(--color-white);
 }
