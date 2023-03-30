@@ -370,7 +370,7 @@ header {
   display: flex;
 }
 .footer-wrap-logo-text {
-  width: 264px;
+  /* min-width: 264px;*/
   margin-right: 120px;
 }
 .footer-social-media-wrap {
