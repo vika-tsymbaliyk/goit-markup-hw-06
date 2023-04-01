@@ -370,12 +370,11 @@ header {
   display: flex;
 }
 .footer-wrap-logo-text {
-  /* min-width: 264px;*/
+  width: 264px;
   margin-right: 120px;
 }
 .footer-social-media-wrap {
-  width: 208px;
-  margin-right: 80px;
+  margin-right: auto;
 }
 .social-media-title {
   font-weight: 500;
@@ -406,9 +405,7 @@ header {
 .footer-social-media-icon {
   fill: var(--color-white);
 }
-.footer-form-wrap {
-  width: 100%;
-}
+
 .footer-form {
   width: 100%;
   display: flex;
@@ -435,25 +432,24 @@ header {
   height: 40px;
   border: none;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 8px 24px;
   color: var(--color-white);
   font-weight: 500;
+  font-size: 12px;
   font-size: 16px;
   line-height: 1.5;
   display: inline-flex;
   align-items: center;
   text-align: center;
+  gap: 16px;
   letter-spacing: 0.04em;
-  min-width: 165px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--color-ocean);
 }
-.footer-form-btn-text {
-  margin-right: 16px;
-}
+
 .footer-form-btn-icon {
   fill: var(--color-white);
 }
@@ -564,7 +560,7 @@ header {
 .modal {
   width: 400px;
   min-height: 576px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   background-color: var(--color-dairy);
   border-radius: 5px;
   position: absolute;
@@ -584,6 +580,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-cornflower);
   position: absolute;
+  top: 24px;
   right: 24px;
   padding: 8px;
   display: inline-flex;
@@ -614,7 +611,6 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-grey);
-  padding-top: 42px;
   margin: 0 auto 16px;
   width: 100%;
 }
@@ -726,9 +722,9 @@ header {
   color: var(--color-light-slate);
   gap: 3px;
 }
-/*.check-text-link {
-  text-decoration-line: underline;
-}*/
+.check-text-link {
+  color: var(--color-iris);
+}
 .check-text::before {
   content: "";
   width: 16px;
@@ -748,4 +744,7 @@ header {
   background-color: var(--color-iris);
   fill: var(--color-white);
   border: none;
+}
+.modal-check:focus + .check-text::before {
+  border-color: var(--color-iris);
 }
